@@ -1,2 +1,0 @@
-[build]
-command = "python3 app.py"  # Replace with your start command
