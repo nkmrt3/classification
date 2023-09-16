@@ -1,5 +1,7 @@
-Flask>=*
-tensorflow>=*
-numpy>=*
-pandas>=*
-tensorflow-hub>=*
+Flask
+tensorflow
+numpy
+pandas
+tensorflow-hub
+gunicorn
+
