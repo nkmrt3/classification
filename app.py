@@ -1,7 +1,6 @@
 import numpy as np
 import pandas as pd
 import tensorflow as tf
-import tensorflow_hub as hub
 from flask import Flask, render_template, request
 
 # Initialize Flask app
@@ -21,8 +20,8 @@ def index():
     if request.method == 'POST':
         review = request.form['review']
         prediction = predict_wine_review(review)
-        return render_template('index.html', review=review, prediction=prediction)
+        return render_template('index.html', prediction=prediction)
     return render_template('index.html')
 
 if __name__ == '__main__':
-    app.run(debug=True,host='0.0.0.0', port=8080)
+    app.run(debug=True, host='0.0.0.0', port=8080)
